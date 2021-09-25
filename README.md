@@ -31,11 +31,11 @@ class CodeNameGenerator
      * @return string
      */
     public function generate(int $number_of_adjectives = 1): string;
-
+}
 ``` 
 ## Installation
 
-```shelll
+```shell
 composer require node83/codenamegen
 ```
 
