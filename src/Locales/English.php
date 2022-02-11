@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace CodeNameGenerator\Locales;
+namespace NameGenerator\Locales;
 
-use CodeNameGenerator\Interfaces\LocaleInterface;
+use NameGenerator\Interfaces\LocaleInterface;
 
 final class English implements LocaleInterface
 {

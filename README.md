@@ -1,24 +1,24 @@
-# Code Name Generator
+# Name Generator
 
-A simple code name generator simpler that produces names not
-dissimilar to Docker instance names.
+A simple name generator that produces names not dissimilar to Docker
+instance names.
 
-It produces codes names based on one or more adjectives followed
-by a single noun:
+It produces names based on one or more adjectives followed by a single
+noun:
 
 `<adjective>-<noun>`
 
 You can specify a different sent of adjectives and nouns by 
 passing a class that implements
-`\CodeNameGenerator\Interfaces\LocaleInterface`.
+`\NameGenerator\Interfaces\LocaleInterface`.
 
 ## Documenation
 
 ```php
-class CodeNameGenerator
+class NameGenerator
 {
     /**
-     * CodeNameGenerator Constructor.
+     * NameGenerator Constructor.
      *
      * @param LocaleInterface|null $locale (Optional, defaults to English)
      */
@@ -36,7 +36,7 @@ class CodeNameGenerator
 ## Installation
 
 ```shell
-composer require node83/codenamegen
+composer require node86/name-generator
 ```
 
 ## Example Usage
@@ -46,7 +46,7 @@ composer require node83/codenamegen
 
 require __DIR__ . '/vendor/autoload.php';
 
-$generator = new \CodeNameGenerator\CodeNameGenerator();
+$generator = new \NameGenerator\NameGenerator();
 
 for ($i = 0; $i < 10; $i++) {
     echo $generator->generate() . PHP_EOL;

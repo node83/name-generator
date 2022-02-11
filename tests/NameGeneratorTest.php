@@ -1,23 +1,23 @@
 <?php
 declare(strict_types=1);
 
-use CodeNameGenerator\CodeNameGenerator;
-use CodeNameGenerator\Locales\English;
+use NameGenerator\CodeNameGenerator;
+use NameGenerator\Locales\English;
 use PHPUnit\Framework\TestCase;
 
 /**
- * @coversDefaultClass \CodeNameGenerator\CodeNameGenerator
+ * @coversDefaultClass \NameGenerator\NameGenerator
  */
-final class NamegenTest extends TestCase
+final class NameGeneratorTest extends TestCase
 {
     /**
      * @covers ::generate
      * @covers ::__construct
-     * @covers \CodeNameGenerator\Locales\English
+     * @covers \NameGenerator\Locales\English
      */
     public function testDefaultsGeneratesTwoEnglishWords(): void
     {
-        $generator = new CodeNameGenerator();
+        $generator = new NameGenerator();
         $name = $generator->generate();
         $words = explode('-', $name);
         $locale = new English();

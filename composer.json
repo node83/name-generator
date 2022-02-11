@@ -1,6 +1,6 @@
 {
-    "name": "node83/codenamegen",
-    "description": "Code name generator",
+    "name": "node86/name-generator",
+    "description": "Docker-like name generator",
 
     "type": "library",
     "license": "MIT",
@@ -14,7 +14,7 @@
 
     "autoload": {
         "psr-4": {
-            "CodeNameGenerator\\": "src/"
+            "NameGenerator\\": "src/"
         }
     },
 

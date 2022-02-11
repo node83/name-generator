@@ -1,17 +1,17 @@
 <?php
 
-namespace CodeNameGenerator;
+namespace NameGenerator;
 
-use CodeNameGenerator\Interfaces\LocaleInterface;
-use CodeNameGenerator\Locales\English;
+use NameGenerator\Interfaces\LocaleInterface;
+use NameGenerator\Locales\English;
 
-class CodeNameGenerator
+class NameGenerator
 {
     /** @var LocaleInterface */
     private LocaleInterface $locale;
 
     /**
-     * CodeNameGenerator Constructor.
+     * NameGenerator Constructor.
      *
      * @param LocaleInterface|null $locale (Optional, defaults to English)
      */
