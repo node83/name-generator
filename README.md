@@ -36,7 +36,7 @@ class NameGenerator
 ## Installation
 
 ```shell
-composer require node86/name-generator
+composer require node83/name-generator
 ```
 
 ## Example Usage

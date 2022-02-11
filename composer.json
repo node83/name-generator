@@ -1,5 +1,5 @@
 {
-    "name": "node86/name-generator",
+    "name": "node83/name-generator",
     "description": "Docker-like name generator",
 
     "type": "library",
